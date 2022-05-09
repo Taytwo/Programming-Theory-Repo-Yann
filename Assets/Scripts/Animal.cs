@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Animal : MonoBehaviour
+{
+    private float inputHorizontal;
+    private float inputVertical;
+    private Rigidbody animalRB;
+
+    private bool isOnGround;
+    public float speedTest = 20f;
+    public float jumpTest = 600f;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        animalRB = GetComponent<Rigidbody>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        move(speedTest);
+
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
+            jump(jumpTest);
+        }
+    }
+
+    public void move(float speed)
+    {
+        inputHorizontal = Input.GetAxis("Horizontal");
+        inputVertical = Input.GetAxis("Vertical");
+
+        transform.Translate(Vector3.right * Time.deltaTime * speed * inputHorizontal);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * inputVertical);
+    }
+
+    public void jump(float jumpForce)
+    {
+        isOnGround = false;
+        animalRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
+
+    private void OnCollisionEnter(Collision other) 
+    {
+        if (other.gameObject.tag == "Ground")
+        {
+            isOnGround = true;
+        }
+    }
+}
