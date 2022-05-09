@@ -910,6 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 318c9820ccefe624983fcb8b755a85b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 1748115034}
   speedTest: 10
   jumpTest: 700
 --- !u!54 &753063540
@@ -1013,7 +1014,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1516229721}
         m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
-        m_MethodName: CharacSelectScene
+        m_MethodName: CharacSelectScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1966,7 +1967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1748115035
 RectTransform:
   m_ObjectHideFlags: 0
