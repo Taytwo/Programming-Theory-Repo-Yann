@@ -18,6 +18,11 @@ public class MenuUIHandler : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void CharacSelectScreen()
+    {
+        SceneManager.LoadScene(1);
+    }
+    
     public void TitleScene()
     {
         SceneManager.LoadScene(0);

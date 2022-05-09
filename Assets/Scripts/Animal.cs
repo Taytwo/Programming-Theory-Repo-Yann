@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
+    [SerializeField] GameObject gameOverScreen;
     private float inputHorizontal;
     private float inputVertical;
     private Rigidbody animalRB;
@@ -57,6 +58,7 @@ public class Animal : MonoBehaviour
         if (other.gameObject.tag == "Car")
         {
             Destroy(gameObject);
+            gameOverScreen.gameObject.SetActive(true);
         }
     }
 }
