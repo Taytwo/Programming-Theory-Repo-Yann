@@ -11,7 +11,7 @@ public class Animal : MonoBehaviour
 
     private bool isOnGround;
     public float speedTest = 10f;
-    public float jumpTest = 600f;
+    public float jumpTest = 700f;
     
     // Start is called before the first frame update
     void Start()
