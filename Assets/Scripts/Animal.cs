@@ -51,4 +51,12 @@ public class Animal : MonoBehaviour
             isOnGround = true;
         }
     }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if (other.gameObject.tag == "Car")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
