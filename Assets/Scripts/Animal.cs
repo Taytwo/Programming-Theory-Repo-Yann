@@ -7,9 +7,10 @@ public class Animal : MonoBehaviour
     private float inputHorizontal;
     private float inputVertical;
     private Rigidbody animalRB;
+    private Vector3 moveInput;
 
     private bool isOnGround;
-    public float speedTest = 20f;
+    public float speedTest = 10f;
     public float jumpTest = 600f;
     
     // Start is called before the first frame update
@@ -18,7 +19,6 @@ public class Animal : MonoBehaviour
         animalRB = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         move(speedTest);
