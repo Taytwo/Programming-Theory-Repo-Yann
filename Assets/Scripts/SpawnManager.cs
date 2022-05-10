@@ -26,7 +26,7 @@ public class SpawnManager : MonoBehaviour
 
     IEnumerator spawnCar (Vector3 spawnPos, float rotateValue)
     {
-        while (true)
+        while (GameManager.instance.isGameActive)
             {
                 yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
                 Instantiate(cars[Random.Range(0, 4)], spawnPos, transform.rotation * Quaternion.Euler (0f,rotateValue, 0f));

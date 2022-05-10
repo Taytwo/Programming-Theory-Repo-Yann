@@ -18,6 +18,7 @@ public class Animal : MonoBehaviour
     void Start()
     {
         animalRB = GetComponent<Rigidbody>();
+        GameManager.instance.isGameActive = true;
     }
 
     void Update()
@@ -59,6 +60,7 @@ public class Animal : MonoBehaviour
         {
             Destroy(gameObject);
             gameOverScreen.gameObject.SetActive(true);
+            GameManager.instance.isGameActive = false;
         }
     }
 }
