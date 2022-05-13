@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] cars;
+    [SerializeField] private GameObject[] characters;
     private float minDelay = 1f;
     private float maxDelay = 2.5f;
     private Vector3 topRightSpawn = new Vector3(43f, 0, 11.5f);
@@ -14,8 +15,14 @@ public class SpawnManager : MonoBehaviour
     private Vector3 bottomRightSpawn = new Vector3(43f, 0, -9.3f);
     private Vector3 bottomLeftSpawn = new Vector3(-43f, 0, -14.3f);
     // Start is called before the first frame update
+    private void Awake() 
+    {
+        GameManager.instance.isGameActive = true;        
+    }
+
     void Start()
     {
+        Instantiate(characters[Random.Range(0, 3)], new Vector3(0, 1, 0), Quaternion.identity);
         StartCoroutine(spawnCar(topRightSpawn, -90));
         StartCoroutine(spawnCar(middleRightSpawn, -90));
         StartCoroutine(spawnCar(bottomRightSpawn, -90));
