@@ -22,7 +22,7 @@ public class SpawnManager : MonoBehaviour
 
     void Start()
     {
-        Instantiate(characters[Random.Range(0, 3)], new Vector3(0, 1, 0), Quaternion.identity);
+        Instantiate(characters[GameManager.instance.characterPlayed], new Vector3(0, 1, 0), Quaternion.identity);
         StartCoroutine(spawnCar(topRightSpawn, -90));
         StartCoroutine(spawnCar(middleRightSpawn, -90));
         StartCoroutine(spawnCar(bottomRightSpawn, -90));
@@ -40,4 +40,6 @@ public class SpawnManager : MonoBehaviour
             }
 
     }
+
+
 }

@@ -29,7 +29,7 @@ public class MenuUIHandler : MonoBehaviour
     }
 
         public void GameScene()
-    {
+    {           
         SceneManager.LoadScene(2);
     }
 

@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public string playerName;
 
+    public int characterPlayed;
+
     public bool isGameActive;
 
 
