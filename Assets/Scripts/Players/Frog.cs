@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//INHERITANCE
 public class Frog : Animal
 {
 
@@ -35,6 +36,7 @@ public class Frog : Animal
         }
     }
 
+    //POLYMORPHISM
     public override void jump(float jumpForce)
     {
         base.jump(jumpForce);

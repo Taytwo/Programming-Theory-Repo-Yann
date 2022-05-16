@@ -16,6 +16,7 @@ public class Animal : MonoBehaviour
 
     public ParticleSystem lossParticle;
 
+    //ABSTRACTION
     public virtual void move(float speed)
     {
         //get inputs
@@ -45,6 +46,7 @@ public class Animal : MonoBehaviour
         transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 
+    //ABSTRACTION
     public virtual void jump(float jumpForce)
     {
         isOnGround = false;

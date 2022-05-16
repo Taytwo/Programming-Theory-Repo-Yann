@@ -6,7 +6,9 @@ using System.IO;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
+    // ENCAPSULATION
+    // to protect GameManager
+    public static GameManager instance {get; private set;}
 
     public AudioSource lossSound;
     public string playerName;

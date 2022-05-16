@@ -14,8 +14,16 @@ public class MenuUIHandler : MonoBehaviour
 
     public void StartGame()
     {
-        GameManager.instance.playerName = inputNameField.GetComponent<Text>().text;
-        SceneManager.LoadScene(1);
+        if (string.IsNullOrWhiteSpace(inputNameField.GetComponent<Text>().text))
+        {
+            GameManager.instance.playerName = "Player1";
+        }
+        else
+        {
+            GameManager.instance.playerName = inputNameField.GetComponent<Text>().text;
+        }
+
+        SceneManager.LoadScene(1);      
     }
 
     public void CharacSelectScreen()
