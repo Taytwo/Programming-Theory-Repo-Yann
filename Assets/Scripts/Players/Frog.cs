@@ -8,10 +8,13 @@ public class Frog : Animal
     private float speed = 0f;
     private float jumpForceVertical = 700f;
     private float jumpForceHorizontal = 400f;
+
+    private Animator frogAnimator;
     // Start is called before the first frame update
     private void Awake() 
     {
         gameOverScreen = GameOver.instance.gameObject;
+        frogAnimator = gameObject.GetComponent<Animator>();
     }
     
     void Start()
@@ -35,6 +38,7 @@ public class Frog : Animal
     {
         base.jump(jumpForce);
         animalRB.AddForce(movementDirection * jumpForceHorizontal, ForceMode.Impulse);
+        frogAnimator.SetTrigger("Jump");
 
     }
 }
