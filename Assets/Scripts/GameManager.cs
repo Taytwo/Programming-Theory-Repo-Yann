@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     public bool isGameActive;
 
+    public int[] bestScore;
+    public string[] bestScorePlayerName;
+
 
     private void Awake() 
     {

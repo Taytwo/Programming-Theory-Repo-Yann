@@ -1010,6 +1010,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
+  characterPlayed: 0
+  isGameActive: 0
+  bestScore: 000000000000000000000000
+  bestScorePlayerName:
+  - 
+  - 
+  - 
 --- !u!4 &1159239804
 Transform:
   m_ObjectHideFlags: 0
