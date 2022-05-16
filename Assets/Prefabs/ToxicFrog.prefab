@@ -4374,9 +4374,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6509559728196419665}
   - component: {fileID: 6562923180741736003}
-  - component: {fileID: 6603308446987318629}
   - component: {fileID: 6504940757025924573}
   - component: {fileID: 6504940757025924574}
+  - component: {fileID: 7738104207724925504}
   m_Layer: 0
   m_Name: ToxicFrog
   m_TagString: Untagged
@@ -4422,20 +4422,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!136 &6603308446987318629
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6504295911384631733}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.15251374
-  m_Height: 0.30502748
-  m_Direction: 2
-  m_Center: {x: -0.003750831, y: 0.06999999, z: -0.0068764985}
 --- !u!54 &6504940757025924573
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4470,6 +4456,20 @@ MonoBehaviour:
   animalRB: {fileID: 0}
   isOnGround: 0
   movementDirection: {x: 0, y: 0, z: 0}
+  animator: {fileID: 0}
+--- !u!65 &7738104207724925504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504295911384631733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36088353, y: 0.17964153, z: 0.31000873}
+  m_Center: {x: 0.0047692913, y: 0.076313466, z: -0.011129091}
 --- !u!1 &6504296949588166373
 GameObject:
   m_ObjectHideFlags: 0
