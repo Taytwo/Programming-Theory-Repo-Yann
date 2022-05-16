@@ -17,6 +17,7 @@ public class Bull : Animal
     {
         gameOverScreen.SetActive(false);
         animalRB = GetComponent<Rigidbody>(); 
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame

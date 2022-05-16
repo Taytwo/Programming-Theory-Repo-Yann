@@ -12,6 +12,7 @@ public class Animal : MonoBehaviour
     public bool isOnGround;
 
     public Vector3 movementDirection;
+    public Animator animator;
 
     public virtual void move(float speed)
     {
@@ -28,6 +29,11 @@ public class Animal : MonoBehaviour
         if (movementDirection != Vector3.zero)
         {
             transform.forward = movementDirection;
+            animator.SetFloat("Speed", speed);
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0);
         }
 
         //keep the player inside the camera view
@@ -41,6 +47,7 @@ public class Animal : MonoBehaviour
     {
         isOnGround = false;
         animalRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        animator.SetTrigger("Jump");
     }
 
     private void OnCollisionEnter(Collision other) 

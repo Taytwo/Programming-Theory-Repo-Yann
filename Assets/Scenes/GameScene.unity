@@ -1235,8 +1235,8 @@ MonoBehaviour:
   - {fileID: 5607980252988941749, guid: 63b6e10eedb01354f98c2db225d6652e, type: 3}
   - {fileID: 4087057940129715702, guid: d6324961aa6a46f4f9570e51450b2352, type: 3}
   characters:
-  - {fileID: 2782370502093063640, guid: 4418f6c84f9ff6c4aa67f9849fb67895, type: 3}
-  - {fileID: 6778266488503905408, guid: e1dd70b0ff33c2a4ea40fea5b6bf8224, type: 3}
+  - {fileID: 4664745709899783181, guid: 1b3630405a2d1e043afba865e381ed05, type: 3}
+  - {fileID: 5377466276747892623, guid: d319575b5e4e4694694eff5366fe5b2c, type: 3}
   - {fileID: 6504295911384631733, guid: da5532ae1bb4f5347ae34b66a8dda96c, type: 3}
 --- !u!4 &1070413194
 Transform:

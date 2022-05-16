@@ -16,7 +16,8 @@ public class Cat : Animal
     void Start()
     {
         gameOverScreen.SetActive(false);
-        animalRB = GetComponent<Rigidbody>(); 
+        animalRB = GetComponent<Rigidbody>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
