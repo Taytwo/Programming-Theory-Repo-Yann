@@ -1014,9 +1014,9 @@ MonoBehaviour:
   isGameActive: 0
   bestScore: 000000000000000000000000
   bestScorePlayerName:
-  - 
-  - 
-  - 
+  - None
+  - None
+  - None
 --- !u!4 &1159239804
 Transform:
   m_ObjectHideFlags: 0

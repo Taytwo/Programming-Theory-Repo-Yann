@@ -50,6 +50,7 @@ public class Animal : MonoBehaviour
         if (other.gameObject.tag == "Car")
         {
             Destroy(gameObject);
+            GameManager.instance.SaveHighScore();
             gameOverScreen.gameObject.SetActive(true);
             GameManager.instance.isGameActive = false;
         }
