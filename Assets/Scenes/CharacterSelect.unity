@@ -312,7 +312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 25fb3a3e6eb189041aa59ed6ee70c7f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d342254a15bf8844eba7ab053ffd48ca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -510,8 +510,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pat the Cat is able to move and jump but he is not really fast compared
-    to a car.
+  m_text: Nox the Fox is able to move and jump but he is not as fast as a car, that's
+    for sure !!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1855,8 +1855,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Raoul the Bull is really fast !! Unfortunately, he is not able to jump
-    to avoid a car.
+  m_text: Caro the Rhino is really fast (still not as fast as a car) !! Unfortunately,
+    he is not able to jump to avoid a car.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2069,7 +2069,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b07e9e5b8da8a0e49b4dd23626983a37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07ddd07f1ff56cb4f97d6330b5127cf1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
