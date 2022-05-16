@@ -29,6 +29,12 @@ public class Animal : MonoBehaviour
         {
             transform.forward = movementDirection;
         }
+
+        //keep the player inside the camera view
+        Vector3 pos = Camera.main.WorldToViewportPoint (transform.position);
+        pos.x = Mathf.Clamp01(pos.x);
+        pos.y = Mathf.Clamp01(pos.y);
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 
     public virtual void jump(float jumpForce)
