@@ -7,6 +7,8 @@ using System.IO;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    public AudioSource lossSound;
     public string playerName;
 
     public int characterPlayed;
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
         LoadHighScore();
+        lossSound = GetComponent<AudioSource>();
     }
 
 
@@ -68,6 +71,11 @@ public class GameManager : MonoBehaviour
             }
 
         }
+    }
+
+    public void PlayLossSound()
+    {
+        lossSound.Play();
     }
 
 }

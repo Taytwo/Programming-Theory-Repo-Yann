@@ -64,6 +64,7 @@ public class Animal : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.instance.SaveHighScore();
+            GameManager.instance.PlayLossSound();
             gameOverScreen.gameObject.SetActive(true);
             GameManager.instance.isGameActive = false;
         }
