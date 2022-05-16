@@ -14,6 +14,8 @@ public class Animal : MonoBehaviour
     public Vector3 movementDirection;
     public Animator animator;
 
+    public ParticleSystem lossParticle;
+
     public virtual void move(float speed)
     {
         //get inputs
@@ -62,9 +64,11 @@ public class Animal : MonoBehaviour
     {
         if (other.gameObject.tag == "Car")
         {
+            lossParticle.transform.position = transform.position;
+            lossParticle.Play();
             Destroy(gameObject);
-            GameManager.instance.SaveHighScore();
             GameManager.instance.PlayLossSound();
+            GameManager.instance.SaveHighScore();
             gameOverScreen.gameObject.SetActive(true);
             GameManager.instance.isGameActive = false;
         }

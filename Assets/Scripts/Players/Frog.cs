@@ -21,6 +21,7 @@ public class Frog : Animal
         gameOverScreen.SetActive(false);
         animalRB = GetComponent<Rigidbody>(); 
         animator = gameObject.GetComponent<Animator>();
+        lossParticle = GameObject.Find("LossParticle").GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
